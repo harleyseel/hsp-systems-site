@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HSP Systems LLC — Business Systems & Management</title>
+  <meta name="description" content="HSP Systems LLC designs and implements business systems, process automation, and management solutions for service-based companies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --navy:#0f3353;   /* pulled from logo */
+      --gold:#c1872e;   /* pulled from logo */
+      --ink:#0b1420;
+      --muted:#5b6b7a;
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --radius:16px;
+      --shadow:0 8px 24px rgba(15,51,83,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--navy);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:44px;width:auto}
+    .brand .name{font-weight:700;font-size:18px;letter-spacing:.3px}
+    .cta{display:flex;gap:10px}
+    .btn{
+      display:inline-block;border:1px solid var(--navy);color:#fff;background:var(--navy);
+      padding:10px 16px;border-radius:10px;font-weight:600;transition:.15s box-shadow,.15s transform
+    }
+    .btn.alt{background:transparent;color:var(--navy)}
+    .btn:hover{box-shadow:0 6px 16px rgba(15,51,83,.15);transform:translateY(-1px)}
+    .hero{
+      display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;
+      background:linear-gradient(180deg,#fff,rgba(255,255,255,.9)); border-radius:var(--radius);
+      padding:36px; box-shadow:var(--shadow)
+    }
+    .hero h1{margin:0 0 12px 0;font-size:38px;line-height:1.1;letter-spacing:.2px}
+    .hero p{margin:0 0 20px 0;color:var(--muted);font-size:18px}
+    .hero .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+    .badge{
+      background:#f0f3f7;border:1px solid #e4e8ee;border-radius:999px;
+      padding:6px 10px;color:var(--navy);font-weight:600;font-size:12px
+    }
+    .card{
+      background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px
+    }
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card h3{margin:0 0 8px 0;font-size:18px}
+    .muted{color:var(--muted)}
+    .about{
+      display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center
+    }
+    .headshot{
+      width:100%;border-radius:14px;object-fit:cover;box-shadow:var(--shadow)
+    }
+    .section{margin-top:28px}
+    .footer{
+      padding:28px 0;color:#6b7a88;text-align:center;font-size:14px
+    }
+    .note{font-size:13px;color:#6d7785}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .cta{flex-wrap:wrap}
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="brand">
+        <img src="hsp-logo.png" alt="HSP Systems logo" />
+        <div class="name">HSP Systems LLC</div>
+      </div>
+      <div class="cta">
+        <a class="btn alt" href="#contact">Contact</a>
+        <a class="btn" href="mailto:harley@harleyseelbinder.com">Email</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h1>Systems that create freedom for business owners</h1>
+        <p>HSP Systems LLC designs and implements business systems, process automation, and hands-on management solutions for service companies. The company also acquires minority stakes in operator-led businesses to scale them with discipline and technology.</p>
+        <div class="badges">
+          <span class="badge">Management & Operations</span>
+          <span class="badge">Process Engineering</span>
+          <span class="badge">Automation</span>
+          <span class="badge">Small Business Finance</span>
+        </div>
+        <div style="margin-top:18px" class="cta">
+          <a class="btn" href="#services">View Services</a>
+          <a class="btn alt" href="#about">About</a>
+        </div>
+        <p class="note" style="margin-top:12px">Current focus: acquisition of a 20% stake in Expert Cleaning Services, Inc. and operational optimization.</p>
+      </div>
+      <div class="card">
+        <h3>Fast facts</h3>
+        <ul class="muted" style="margin:10px 0 0 18px;line-height:1.7">
+          <li>Entity: HSP Systems LLC (Michigan)</li>
+          <li>Purpose: Management consulting and business systems</li>
+          <li>NAICS: 541611 — Administrative & Management Consulting</li>
+          <li>Contact: <a href="mailto:harley@harleyseelbinder.com">harley@harleyseelbinder.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <h2 style="margin:0 0 14px 0">Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Systems & SOPs</h3>
+          <p class="muted">Design and install standard operating procedures, dashboards, and controls that reduce owner dependency and increase margin.</p>
+        </div>
+        <div class="card">
+          <h3>Automation</h3>
+          <p class="muted">Workflow automation for quoting, scheduling, onboarding, and follow-ups. Practical tools that pay for themselves.</p>
+        </div>
+        <div class="card">
+          <h3>Management Support</h3>
+          <p class="muted">Hands-on help with budgeting, KPIs, hiring funnels, and weekly operating rhythm.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <img class="headshot" src="harley.jpg" alt="Harley Seelbinder" />
+      <div>
+        <h2 style="margin-top:0">About</h2>
+        <p class="muted">HSP Systems LLC is operated by Harley Seelbinder, an industrial and systems engineer focused on building businesses that are simple, disciplined, and profitable. The company partners with owner-operators to install systems that improve cash flow and create time freedom.</p>
+        <p class="muted">Current projects include operational improvements for Expert Cleaning Services, Inc. and select consulting engagements.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section card">
+      <h2 style="margin-top:0">Contact</h2>
+      <p class="muted">Email is best. Use the button below or the form.</p>
+      <div class="cta" style="margin:8px 0 12px 0">
+        <a class="btn" href="mailto:harley@harleyseelbinder.com">Email Harley</a>
+      </div>
+      <form method="post" action="https://formspree.io/f/your-id" style="display:grid;gap:10px">
+        <!-- Replace the Formspree URL with your own endpoint or use mailto if you prefer -->
+        <input type="text" name="name" placeholder="Your name" required style="padding:12px;border:1px solid #d6dde6;border-radius:10px">
+        <input type="email" name="email" placeholder="Your email" required style="padding:12px;border:1px solid #d6dde6;border-radius:10px">
+        <textarea name="message" rows="4" placeholder="How can I help?" required style="padding:12px;border:1px solid #d6dde6;border-radius:10px"></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p class="note" style="margin-top:10px">Prefer direct? harley@harleyseelbinder.com</p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>© <span id="y"></span> HSP Systems LLC. All rights reserved.</div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
